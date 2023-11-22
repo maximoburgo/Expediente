@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Instituciones Educativas</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Agrega estilos según tus preferencias -->
+</head>
+<body>
+
+  <header>
+    <h1>Consulta de Instituciones Educativas</h1>
+  </header>
+
+  <main>
+    <form id="searchForm">
+      <label for="searchInput">Buscar por nombre o CUE:</label>
+      <input type="text" id="searchInput" oninput="filterData()">
+    </form>
+
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>CUE</th>
+          <th>Nombre del Establecimiento</th>
+          <th>Dirección</th>
+          <th>Turno</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se cargarán dinámicamente los datos -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+  <script src="script.js"></script> <!-- Agrega tus scripts para manejar la carga de datos y filtrado -->
+
+</body>
+</html>
